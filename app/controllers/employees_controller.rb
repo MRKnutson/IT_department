@@ -15,5 +15,6 @@ class EmployeesController < ApplicationController
 
   def create
     Employee.create(name:params[:employee][:name], email:params[:employee][:email], saying:params[:employee][:saying], age:params[:employee][:age])
+    redirect_to employees_path
   end
 end
