@@ -5,13 +5,3 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-require "faker"
-
-20.times do
-  Employee.create(
-    name: Faker::TvShows::TheITCrowd.character,
-    email: Faker::TvShows::TheITCrowd.email,
-    saying: Faker::TvShows::TheITCrowd.quote,
-    age: Faker::Number.within(range: 21..65),
-  )
-end
